@@ -3,95 +3,574 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 <title>Samir Verma — Developer Portfolio</title>
+
 <meta name="description" content="Samir Verma — Developer, data enthusiast and builder. Explore live products, projects and coding work.">
+
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+
 <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
+
 <div class="noise"></div>
 <div class="cursor-glow"></div>
 
+
+<!-- ================= NAVBAR ================= -->
+
 <header class="nav">
-  <a class="brand" href="#home"><span>SV</span> SAMIR<span class="dot">.</span></a>
+
+  <a class="brand" href="#home">
+    <span>SV</span> SAMIR<span class="dot">.</span>
+  </a>
+
   <nav>
-    <a href="#work">Work</a><a href="#stack">Stack</a><a href="#content">Content</a><a href="#about">About</a>
+    <a href="#work">Work</a>
+    <a href="#stack">Stack</a>
+    <a href="#content">Content</a>
+    <a href="#about">About</a>
   </nav>
-  <a class="nav-cta" href="#contact">Let's talk <span>↗</span></a>
+
+  <a class="nav-cta" href="#contact">
+    Let's talk <span>↗</span>
+  </a>
+
 </header>
 
+
 <main>
+
+
+<!-- ================= HERO ================= -->
+
 <section id="home" class="hero">
+
   <div class="hero-grid"></div>
-  <div class="eyebrow"><i></i> AVAILABLE FOR OPPORTUNITIES</div>
-  <h1>I BUILD<br><em>THINGS</em><br>THAT <span>WORK.</span></h1>
-  <p class="hero-copy">Developer & data enthusiast turning ideas into usable products, experiments and digital experiences.</p>
-  <div class="hero-actions">
-    <a class="primary" href="#work">Explore my work <span>↓</span></a>
-    <a class="secondary" href="#contact">Connect with me ↗</a>
+
+  <div class="eyebrow">
+    <i></i> AVAILABLE FOR OPPORTUNITIES
   </div>
+
+  <h1>
+    I BUILD<br>
+    <em>THINGS</em><br>
+    THAT <span>WORK.</span>
+  </h1>
+
+  <p class="hero-copy">
+    Developer & data enthusiast turning ideas into usable products,
+    experiments and digital experiences.
+  </p>
+
+  <div class="hero-actions">
+
+    <a class="primary" href="#work">
+      Explore my work <span>↓</span>
+    </a>
+
+    <a class="secondary" href="#contact">
+      Connect with me ↗
+    </a>
+
+  </div>
+
   <div class="hero-orb"></div>
-  <div class="scroll-note">SCROLL TO EXPLORE <span>↓</span></div>
+
+  <div class="scroll-note">
+    SCROLL TO EXPLORE <span>↓</span>
+  </div>
+
 </section>
 
-<section class="ticker"><div>BUILD • LEARN • SHIP • REPEAT • &nbsp; BUILD • LEARN • SHIP • REPEAT • &nbsp;</div></section>
+
+<!-- ================= TICKER ================= -->
+
+<section class="ticker">
+  <div>
+    BUILD • LEARN • SHIP • REPEAT •
+    &nbsp;
+    BUILD • LEARN • SHIP • REPEAT •
+  </div>
+</section>
+
+
+<!-- ================= WORK ================= -->
 
 <section id="work" class="section work">
-  <div class="section-head"><span>01 / SELECTED WORK</span><h2>Things I've <em>built.</em></h2></div>
 
-  <article class="project featured">
-    <div class="project-visual typeforge"><div class="mini-window"><span>TYPEFORGE</span><b>WPM 87</b><small>Accuracy 96.4%</small><div class="typing-line">the quick brown fox jumps over the lazy dog<span>▌</span></div></div></div>
-    <div class="project-info"><div class="project-num">01</div><h3>TYPEFORGE</h3><p>Typing speed practice platform designed to help users improve speed and accuracy through focused practice.</p><div class="tags"><span>PYTHON</span><span>FLASK</span><span>HTML/CSS</span><span>JAVASCRIPT</span></div><a class="launch" href="https://legend7.pythonanywhere.com/" target="_blank">LAUNCH LIVE PRODUCT <b>↗</b></a></div>
+  <div class="section-head">
+    <span>01 / SELECTED WORK</span>
+    <h2>Things I've <em>built.</em></h2>
+  </div>
+
+
+  <!-- ================= PROJECT 01 ================= -->
+
+  <article
+    class="project featured"
+    style="cursor:pointer"
+    role="link"
+    tabindex="0"
+    title="Open TypeForge"
+    onclick="window.open('https://legend7.pythonanywhere.com/', '_blank', 'noopener,noreferrer')"
+    onkeydown="if(event.key==='Enter' || event.key===' '){event.preventDefault();window.open('https://legend7.pythonanywhere.com/', '_blank', 'noopener,noreferrer')}"
+  >
+
+    <div class="project-visual typeforge">
+
+      <div class="mini-window">
+
+        <span>TYPEFORGE</span>
+
+        <b>WPM 87</b>
+
+        <small>
+          Accuracy 96.4%
+        </small>
+
+        <div class="typing-line">
+          the quick brown fox jumps over the lazy dog<span>▌</span>
+        </div>
+
+      </div>
+
+    </div>
+
+
+    <div class="project-info">
+
+      <div class="project-num">
+        01
+      </div>
+
+      <h3>
+        TYPEFORGE
+      </h3>
+
+      <p>
+        Typing speed practice platform designed to help users
+        improve speed and accuracy through focused practice.
+      </p>
+
+      <div class="tags">
+        <span>PYTHON</span>
+        <span>FLASK</span>
+        <span>HTML/CSS</span>
+        <span>JAVASCRIPT</span>
+      </div>
+
+      <a
+        class="launch"
+        href="https://legend7.pythonanywhere.com/"
+        target="_blank"
+        rel="noopener noreferrer"
+        onclick="event.stopPropagation()"
+      >
+        LAUNCH LIVE PRODUCT <b>↗</b>
+      </a>
+
+    </div>
+
   </article>
 
-  <article class="project reverse">
-    <div class="project-visual curequest"><div class="medical-ui"><small>CUREQUEST / PREDICTION</small><strong>ML<br>INSIGHT</strong><div class="pulse"></div><span>MODEL INTERFACE</span></div></div>
-    <div class="project-info"><div class="project-num">02</div><h3>CUREQUEST</h3><p>A machine-learning based breast cancer prediction interface, built to turn a classification model into an accessible web experience.</p><div class="tags"><span>PYTHON</span><span>MACHINE LEARNING</span><span>STREAMLIT</span></div><a class="launch" href="https://breast-cancer-predictor-44aw.onrender.com" target="_blank">TRY CUREQUEST <b>↗</b></a></div>
+
+
+  <!-- ================= PROJECT 02 ================= -->
+
+  <article
+    class="project reverse"
+    style="cursor:pointer"
+    role="link"
+    tabindex="0"
+    title="Open CureQuest"
+    onclick="window.open('https://breast-cancer-predictor-44aw.onrender.com', '_blank', 'noopener,noreferrer')"
+    onkeydown="if(event.key==='Enter' || event.key===' '){event.preventDefault();window.open('https://breast-cancer-predictor-44aw.onrender.com', '_blank', 'noopener,noreferrer')}"
+  >
+
+    <div class="project-visual curequest">
+
+      <div class="medical-ui">
+
+        <small>
+          CUREQUEST / PREDICTION
+        </small>
+
+        <strong>
+          ML<br>
+          INSIGHT
+        </strong>
+
+        <div class="pulse"></div>
+
+        <span>
+          MODEL INTERFACE
+        </span>
+
+      </div>
+
+    </div>
+
+
+    <div class="project-info">
+
+      <div class="project-num">
+        02
+      </div>
+
+      <h3>
+        CUREQUEST
+      </h3>
+
+      <p>
+        A machine-learning based breast cancer prediction
+        interface, built to turn a classification model into
+        an accessible web experience.
+      </p>
+
+      <div class="tags">
+        <span>PYTHON</span>
+        <span>MACHINE LEARNING</span>
+        <span>STREAMLIT</span>
+      </div>
+
+      <a
+        class="launch"
+        href="https://breast-cancer-predictor-44aw.onrender.com"
+        target="_blank"
+        rel="noopener noreferrer"
+        onclick="event.stopPropagation()"
+      >
+        TRY CUREQUEST <b>↗</b>
+      </a>
+
+    </div>
+
   </article>
 
-  <article class="project">
-    <div class="project-visual quotes"><div class="quote-card">“<br><strong>Small steps.<br>Every single day.</strong><br><small>— KEEP BUILDING</small></div></div>
-    <div class="project-info"><div class="project-num">03</div><h3>QUOTE GENERATOR</h3><p>A simple motivational quote generator built as a lightweight interactive web app.</p><div class="tags"><span>PYTHON</span><span>STREAMLIT</span></div><a class="launch" href="https://samirvr7-quote-generator.streamlit.app" target="_blank">GENERATE A QUOTE <b>↗</b></a></div>
+
+
+  <!-- ================= PROJECT 03 ================= -->
+
+  <article
+    class="project"
+    style="cursor:pointer"
+    role="link"
+    tabindex="0"
+    title="Open Quote Generator"
+    onclick="window.open('https://samirvr7-quote-generator.streamlit.app', '_blank', 'noopener,noreferrer')"
+    onkeydown="if(event.key==='Enter' || event.key===' '){event.preventDefault();window.open('https://samirvr7-quote-generator.streamlit.app', '_blank', 'noopener,noreferrer')}"
+  >
+
+    <div class="project-visual quotes">
+
+      <div class="quote-card">
+
+        “<br>
+
+        <strong>
+          Small steps.<br>
+          Every single day.
+        </strong>
+
+        <br>
+
+        <small>
+          — KEEP BUILDING
+        </small>
+
+      </div>
+
+    </div>
+
+
+    <div class="project-info">
+
+      <div class="project-num">
+        03
+      </div>
+
+      <h3>
+        QUOTE GENERATOR
+      </h3>
+
+      <p>
+        A simple motivational quote generator built as
+        a lightweight interactive web app.
+      </p>
+
+      <div class="tags">
+        <span>PYTHON</span>
+        <span>STREAMLIT</span>
+      </div>
+
+      <a
+        class="launch"
+        href="https://samirvr7-quote-generator.streamlit.app"
+        target="_blank"
+        rel="noopener noreferrer"
+        onclick="event.stopPropagation()"
+      >
+        GENERATE A QUOTE <b>↗</b>
+      </a>
+
+    </div>
+
   </article>
+
 </section>
+
+
+
+<!-- ================= STACK ================= -->
 
 <section id="stack" class="section stack">
-  <div class="section-head"><span>02 / TOOLKIT</span><h2>My <em>stack.</em></h2></div>
-  <div class="stack-grid">
-    <div class="stack-card"><b>01</b><h3>C++</h3><p>Problem solving & DSA</p></div>
-    <div class="stack-card"><b>02</b><h3>PYTHON</h3><p>Apps, automation & data</p></div>
-    <div class="stack-card"><b>03</b><h3>SQL</h3><p>Queries & data analysis</p></div>
-    <div class="stack-card"><b>04</b><h3>PANDAS</h3><p>Data wrangling & analysis</p></div>
-    <div class="stack-card"><b>05</b><h3>HTML / CSS / JS</h3><p>Modern web interfaces</p></div>
-    <div class="stack-card"><b>06</b><h3>GIT / GITHUB</h3><p>Version control & shipping</p></div>
+
+  <div class="section-head">
+    <span>02 / TOOLKIT</span>
+    <h2>My <em>stack.</em></h2>
   </div>
+
+
+  <div class="stack-grid">
+
+    <div class="stack-card">
+      <b>01</b>
+      <h3>C++</h3>
+      <p>Problem solving & DSA</p>
+    </div>
+
+    <div class="stack-card">
+      <b>02</b>
+      <h3>PYTHON</h3>
+      <p>Apps, automation & data</p>
+    </div>
+
+    <div class="stack-card">
+      <b>03</b>
+      <h3>SQL</h3>
+      <p>Queries & data analysis</p>
+    </div>
+
+    <div class="stack-card">
+      <b>04</b>
+      <h3>PANDAS</h3>
+      <p>Data wrangling & analysis</p>
+    </div>
+
+    <div class="stack-card">
+      <b>05</b>
+      <h3>HTML / CSS / JS</h3>
+      <p>Modern web interfaces</p>
+    </div>
+
+    <div class="stack-card">
+      <b>06</b>
+      <h3>GIT / GITHUB</h3>
+      <p>Version control & shipping</p>
+    </div>
+
+  </div>
+
 </section>
+
+
+
+<!-- ================= CONTENT ================= -->
 
 <section id="content" class="section content">
-  <div class="section-head"><span>03 / CONTENT & LINKS</span><h2>Find me <em>online.</em></h2></div>
-  <div class="link-grid">
-    <a class="big-link" href="https://www.youtube.com/@TechnicaLAlgorithm1726" target="_blank" rel="noopener"><span>YT</span><div><small>VIDEO / CONTENT</small><h3>Technical Algorithm</h3></div><b>↗</b></a>
-    <a class="big-link" href="https://codolio.com/profile/Samirvr/problemSolving" target="_blank" rel="noopener"><span>CO</span><div><small>CODING / PROBLEM SOLVING</small><h3>CodoLio</h3></div><b>↗</b></a>
-    <a class="big-link" href="#" onclick="alert('Add your LinkedIn URL in index.html');return false;"><span>in</span><div><small>CAREER / NETWORK</small><h3>LinkedIn</h3></div><b>↗</b></a>
-    <a class="big-link" href="#contact"><span>CV</span><div><small>PROFILE / EXPERIENCE</small><h3>Resume</h3></div><b>↓</b></a>
+
+  <div class="section-head">
+    <span>03 / CONTENT & LINKS</span>
+    <h2>Find me <em>online.</em></h2>
   </div>
+
+
+  <div class="link-grid">
+
+
+    <!-- YOUTUBE -->
+
+    <a
+      class="big-link"
+      href="https://www.youtube.com/@TechnicaLAlgorithm1726"
+      target="_blank"
+      rel="noopener noreferrer"
+    >
+
+      <span>YT</span>
+
+      <div>
+        <small>VIDEO / CONTENT</small>
+        <h3>Technical Algorithm</h3>
+      </div>
+
+      <b>↗</b>
+
+    </a>
+
+
+
+    <!-- CODOLIO -->
+
+    <a
+      class="big-link"
+      href="https://codolio.com/profile/Samirvr/problemSolving"
+      target="_blank"
+      rel="noopener noreferrer"
+    >
+
+      <span>CO</span>
+
+      <div>
+        <small>CODING / PROBLEM SOLVING</small>
+        <h3>CodoLio</h3>
+      </div>
+
+      <b>↗</b>
+
+    </a>
+
+
+
+    <!-- LINKEDIN -->
+
+    <a
+      class="big-link"
+      href="https://www.linkedin.com/in/samirverma07/"
+      target="_blank"
+      rel="noopener noreferrer"
+    >
+
+      <span>in</span>
+
+      <div>
+        <small>CAREER / NETWORK</small>
+        <h3>LinkedIn</h3>
+      </div>
+
+      <b>↗</b>
+
+    </a>
+
+
+
+    <!-- RESUME -->
+
+    <a
+      class="big-link"
+      href="#contact"
+    >
+
+      <span>CV</span>
+
+      <div>
+        <small>PROFILE / EXPERIENCE</small>
+        <h3>Resume</h3>
+      </div>
+
+      <b>↓</b>
+
+    </a>
+
+
+  </div>
+
 </section>
+
+
+
+<!-- ================= ABOUT ================= -->
 
 <section id="about" class="section about">
-  <div class="section-head"><span>04 / ABOUT</span><h2>More than <em>code.</em></h2></div>
-  <div class="about-grid"><p class="big-copy">I'm a developer who likes to <strong>learn by building.</strong> From web apps to data projects, I enjoy taking an idea from a blank screen to something people can actually open and use.</p><div class="about-note"><span>CURRENT FOCUS</span><h3>Software Development<br>+ Data<br>+ Problem Solving</h3></div></div>
+
+  <div class="section-head">
+    <span>04 / ABOUT</span>
+    <h2>More than <em>code.</em></h2>
+  </div>
+
+
+  <div class="about-grid">
+
+    <p class="big-copy">
+      I'm a developer who likes to
+      <strong>learn by building.</strong>
+      From web apps to data projects, I enjoy taking an idea
+      from a blank screen to something people can actually
+      open and use.
+    </p>
+
+
+    <div class="about-note">
+
+      <span>CURRENT FOCUS</span>
+
+      <h3>
+        Software Development<br>
+        + Data<br>
+        + Problem Solving
+      </h3>
+
+    </div>
+
+  </div>
+
 </section>
+
+
+
+<!-- ================= CONTACT ================= -->
 
 <section id="contact" class="contact">
-  <div class="contact-label">05 / CONTACT</div>
-  <h2>HAVE AN IDEA?<br><em>LET'S BUILD IT.</em></h2>
-  <a class="mail" href="mailto:your-email@example.com">samirverma8987.com <span>↗</span></a>
+
+  <div class="contact-label">
+    05 / CONTACT
+  </div>
+
+  <h2>
+    HAVE AN IDEA?<br>
+    <em>LET'S BUILD IT.</em>
+  </h2>
+
+  <a
+    class="mail"
+    href="mailto:sameersahilverma8910@gmail.com"
+  >
+    samirverma8987.com <span>↗</span>
+  </a>
+
 </section>
+
+
 </main>
 
-<footer><div>© 2026 SAMIR VERMA</div><div>BUILT WITH CURIOSITY & CODE</div><a href="#home">BACK TO TOP ↑</a></footer>
+
+
+<!-- ================= FOOTER ================= -->
+
+<footer>
+
+  <div>
+    © 2026 SAMIR VERMA
+  </div>
+
+  <div>
+    BUILT WITH CURIOSITY & CODE
+  </div>
+
+  <a href="#home">
+    BACK TO TOP ↑
+  </a>
+
+</footer>
+
+
 <script src="script.js"></script>
+
 </body>
 </html>
